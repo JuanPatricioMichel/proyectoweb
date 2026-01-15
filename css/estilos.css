@@ -1,0 +1,139 @@
+/* comentarios en css */
+
+/* siempre es un juego de pares */
+/*
+    selector{
+        propiedad: valor;
+        propiedad2: valor;
+    }
+*/
+
+/* Reset en CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos de body */
+body{
+    background-color: #0E0D0D;
+}
+
+/* Estilos de header*/
+header{
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* rutas de especificidad */
+header nav{
+    display: block;
+    margin-top: 10px;
+}
+
+header nav ul{
+    list-style: none; 
+    padding: 0; 
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: beige;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+/* Estilos de main */
+main{
+    color: whitesmoke;
+    text-align: center;
+}
+
+main nav ol{
+    list-style: none;
+}
+
+main nav ol li ul{
+     list-style: none;
+     display: inline-block;
+}
+
+/* Estilos de footer */
+footer{
+    color: whitesmoke;
+    text-align: center;
+}
+
+footer nav{
+    display: block;
+    margin-top: 10px;
+}
+
+footer nav ul{
+    list-style: none; 
+    padding: 0; 
+}
+
+footer nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    color: beige;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+/* Tipos de selectores */
+
+/* Class */
+main .parraforojo{
+    color: red;
+}
+
+/* ID */
+main #titulo{
+    color:aliceblue;
+}
+
+main nav ul li{   
+    list-style: none;
+    margin: 0 15px;
+}
+
+main nav ul li a .instabutton{
+    background-color: #E5009F;
+    border-style: ridge;
+
+}
+
+main nav ul li a button img{
+    width: 10%;
+
+}
+
+main nav ul li a .facebutton{
+    background-color: #0866FF;
+    border-style: ridge;
+}
+
+main nav ul li a .twitterbutton{
+    background-color: #000000;
+    border-style: ridge;
+}
+
+main nav ul li a .gmailbutton{
+    background-color: #d1d1d1;
+    border-style: ridge;
+}
