@@ -75,6 +75,7 @@ footer{
 footer nav{
     display: block;
     margin-top: 10px;
+    grid-column: 1/4;
 }
 
 footer nav ul{
@@ -85,6 +86,16 @@ footer nav ul{
 footer nav ul li{
     display: inline-block;
     margin: 0 15px;
+}
+
+footer nav ul li a:hover{
+    background-color:#1DCE00;
+    color:#000000 ;
+}
+
+footer nav ul li a:active{
+    background-color:#1bce0094;
+    color:#000000 ;
 }
 
 footer nav ul li a{
@@ -107,10 +118,29 @@ main #titulo{
     color:aliceblue;
 }
 
+/*estilos para la presentacion de la pagina*/
+main div{
+    display: block;
+    border: 1px solid #1DCE00;
+
+}
+
 main nav ul li{   
     list-style: none;
     margin: 0 15px;
 }
+
+
+/* boxing de los productos*/
+main nav ol li ul{
+    display: flex;
+}
+
+main nav ol li ul li img{
+    width:40%;
+}
+
+/**/
 
 main nav ul li a .instabutton{
     background-color: #E5009F;
@@ -136,4 +166,36 @@ main nav ul li a .twitterbutton{
 main nav ul li a .gmailbutton{
     background-color: #d1d1d1;
     border-style: ridge;
+}
+
+.bg-VJstyle{
+    background-color:#0E0D0D;
+}
+
+.bg-VJstyle li a:hover{
+    background-color:#1DCE00;
+    color:#000000 ;
+}
+
+.bg-VJstyle li a:active{
+    background-color:#1bce0094;
+    color:#000000 ;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+}
+
+footer .disclaimer1{
+    grid-column: 1/4;
+}
+
+footer .redessociales{
+    grid-column: 4;
+}
+
+footer .redessociales a img{
+    width: 6%;
 }
