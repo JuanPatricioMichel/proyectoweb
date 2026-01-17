@@ -132,15 +132,36 @@ main nav ul li{
 
 
 /* boxing de los productos*/
-main nav ol li ul{
+main nav .productoslista li ul{
     display: flex;
+    padding: 5px;
 }
 
-main nav ol li ul li img{
+main nav .productoslista li ul li{
+    justify-content: space-between;
+}
+
+main nav .productoslista li ul li img{
     width:40%;
 }
 
 /**/
+
+/*Lista de los botones de redes sociales en contacto*/
+
+main .listadecontacto ul{
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+main .listadecontacto ul li{
+    position: relative;
+    padding:5px;
+    width:fit-content;
+}
 
 main nav ul li a .instabutton{
     background-color: #E5009F;
@@ -150,7 +171,6 @@ main nav ul li a .instabutton{
 
 main nav ul li a button img{
     width: 10%;
-
 }
 
 main nav ul li a .facebutton{
@@ -203,6 +223,14 @@ footer .redessociales{
 }
 
 @media (max-width: 1024px){
+    header nav div img{
+        width: 50%;
+    }
+
+    header nav div{
+        justify-content: space-evenly;
+    }
+
     footer .redessociales a img{
         width: 30%;
     }
