@@ -1,0 +1,7 @@
+
+
+@mixin button($color-bg,$border,$color-tipo){
+    background-color: $color-bg;
+    border-style: $border;
+    color: $color-tipo;
+}

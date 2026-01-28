@@ -1,0 +1,12 @@
+@use "../utilities/variables" as *;
+
+header{
+    nav{
+        display: block;
+        margin-top: 10px;
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+    }
+}

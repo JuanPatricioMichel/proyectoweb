@@ -1,237 +1,64 @@
-/* comentarios en css */
-
-/* siempre es un juego de pares */
-/*
-    selector{
-        propiedad: valor;
-        propiedad2: valor;
-    }
-*/
-
-/* Reset en CSS */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Estilos de body */
-body{
-    background-color: #0E0D0D;
+body {
+  background-color: #0E0D0D;
+  text-align: center;
+  color: whitesmoke;
 }
 
-/* Estilos de header*/
-header{
-    text-align: center;
-    color: whitesmoke;
+header nav {
+  display: block;
+  margin-top: 10px;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* rutas de especificidad */
-header nav{
-    display: block;
-    margin-top: 10px;
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+}
+footer nav {
+  display: block;
+  margin-top: 10px;
+  grid-column: 1/4;
+}
+footer nav ul {
+  list-style: none;
+  padding: 0;
+}
+footer nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+footer nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: whitesmoke;
+}
+footer nav ul li a:hover {
+  background-color: #1DCE00;
+  border-style: hidden;
+  color: black;
+}
+footer nav ul li a:active {
+  background-color: rgba(27, 206, 0, 0.5803921569);
+  border-style: hidden;
+  color: black;
+}
+footer .disclaimer1 {
+  grid-column: 1/4;
+}
+footer .redessociales {
+  grid-column: 4;
 }
 
-header nav ul{
-    list-style: none; 
-    padding: 0; 
-}
-
-header nav ul li{
-    display: inline-block;
-    margin: 0 15px;
-}
-
-header nav ul li a{
-    text-decoration: none;
-    color: beige;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 14px;
-}
-
-/* Estilos de main */
-main{
-    color: whitesmoke;
-    text-align: center;
-}
-
-main nav ol{
-    list-style: none;
-}
-
-main nav ol li ul{
-     list-style: none;
-     display: inline-block;
-}
-
-/* Estilos de footer */
-footer{
-    color: whitesmoke;
-    text-align: center;
-}
-
-footer nav{
-    display: block;
-    margin-top: 10px;
-    grid-column: 1/4;
-}
-
-footer nav ul{
-    list-style: none; 
-    padding: 0; 
-}
-
-footer nav ul li{
-    display: inline-block;
-    margin: 0 15px;
-}
-
-footer nav ul li a:hover{
-    background-color:#1DCE00;
-    color:#000000 ;
-}
-
-footer nav ul li a:active{
-    background-color:#1bce0094;
-    color:#000000 ;
-}
-
-footer nav ul li a{
-    text-decoration: none;
-    color: beige;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 14px;
-}
-
-/* Tipos de selectores */
-
-/* Class */
-main .parraforojo{
-    color: red;
-}
-
-/* ID */
-main #titulo{
-    color:aliceblue;
-}
-
-/*estilos para la presentacion de la pagina*/
-main div{
-    display: block;
-    border: 1px solid #1DCE00;
-
-}
-
-main nav ul li{   
-    list-style: none;
-    margin: 0 15px;
-}
-
-
-/* boxing de los productos*/
-main nav .productoslista li ul{
-    display: flex;
-    padding: 5px;
-}
-
-main nav .productoslista li ul li{
-    justify-content: space-between;
-}
-
-main nav .productoslista li ul li img{
-    width:40%;
-}
-
-/**/
-
-/*Lista de los botones de redes sociales en contacto*/
-
-main .listadecontacto ul{
-    list-style: none;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    margin: 20px;
-}
-
-main .listadecontacto ul li{
-    position: relative;
-    padding:5px;
-    width:fit-content;
-}
-
-main nav ul li a .instabutton{
-    background-color: #E5009F;
-    border-style: ridge;
-
-}
-
-main nav ul li a button img{
-    width: 10%;
-}
-
-main nav ul li a .facebutton{
-    background-color: #0866FF;
-    border-style: ridge;
-}
-
-main nav ul li a .twitterbutton{
-    background-color: #000000;
-    border-style: ridge;
-}
-
-main nav ul li a .gmailbutton{
-    background-color: #d1d1d1;
-    border-style: ridge;
-}
-
-.bg-VJstyle{
-    background-color:#0E0D0D;
-}
-
-.bg-VJstyle li a:hover{
-    background-color:#1DCE00;
-    color:#000000 ;
-}
-
-.bg-VJstyle li a:active{
-    background-color:#1bce0094;
-    color:#000000 ;
-}
-
-footer{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    justify-content: space-between;
-}
-
-footer .disclaimer1{
-    grid-column: 1/4;
-}
-
-footer .redessociales{
-    grid-column: 4;
-}
-
-@media (min-width: 1024px){
-    footer .redessociales a img{
-        width: 6%;
-    }
-}
-
-@media (max-width: 1024px){
-    header nav div img{
-        width: 50%;
-    }
-
-    header nav div{
-        justify-content: space-evenly;
-    }
-
-    footer .redessociales a img{
-        width: 30%;
-    }
-}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,14 @@
+@use "variables" as *;
+
+$color-map: (
+    facebook: $color-facebook,
+    instagram: $color-instagram,
+    twitter: black,
+    gmail: $color-gmail
+);
+
+@each $name, $color in $color-map{
+    .#{$name}-bg {
+        background-color: $color;
+    }
+}

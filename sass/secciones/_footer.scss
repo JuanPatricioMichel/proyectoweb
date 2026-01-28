@@ -1,0 +1,40 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    nav{
+        display: block;
+        margin-top: 10px;
+        grid-column: 1/4;
+        ul{
+            list-style: none;
+            padding: 0;
+            li{
+                display: inline-block;
+                margin: 0 15px;
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    color: $color-tipo;
+                }
+                a:hover{
+                    @include button($color-secundario,hidden,black)
+                }
+                a:active{
+                    @include button($color-terciario,hidden,black)
+                }
+            }
+        }
+    }
+    .disclaimer1{
+        grid-column: 1/4;
+    }
+    .redessociales{
+        grid-column: 4;
+    }
+}
