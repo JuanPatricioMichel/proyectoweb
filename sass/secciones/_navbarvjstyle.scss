@@ -1,0 +1,14 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+.bg-VJstyle{
+    background-color: $color-primario;
+    li{
+        a:hover{
+            @include button($color-secundario,hidden,black)
+        }
+        a:active{
+            @include button($color-terciario,hidden,black)
+        }
+    }
+}

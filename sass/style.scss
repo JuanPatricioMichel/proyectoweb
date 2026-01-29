@@ -1,6 +1,8 @@
 //variables
 @use "utilities/variables" as *;
 @use "base/reset";
+@use "secciones/navbarvjstyle";
 @use "secciones/header";
 @use "secciones/main";
 @use "secciones/footer";
+@use "layout/mobile";

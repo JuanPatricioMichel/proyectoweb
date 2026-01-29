@@ -10,6 +10,20 @@ body {
   color: whitesmoke;
 }
 
+.bg-VJstyle {
+  background-color: #0E0D0D;
+}
+.bg-VJstyle li a:hover {
+  background-color: #1DCE00;
+  border-style: hidden;
+  color: black;
+}
+.bg-VJstyle li a:active {
+  background-color: rgba(27, 206, 0, 0.5803921569);
+  border-style: hidden;
+  color: black;
+}
+
 header nav {
   display: block;
   margin-top: 10px;
@@ -17,6 +31,63 @@ header nav {
 header nav ul {
   list-style: none;
   padding: 0;
+}
+
+main #titulo {
+  color: aliceblue;
+}
+main div {
+  display: block;
+  border: 1px solid #1DCE00;
+}
+main nav ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+main nav ul li a button img {
+  width: 10%;
+}
+main nav ul li a .instabutton {
+  background-color: #E5009F;
+  border-style: ridge;
+  color: whitesmoke;
+}
+main nav ul li a .facebutton {
+  background-color: #0866FF;
+  border-style: ridge;
+  color: whitesmoke;
+}
+main nav ul li a .twitterbutton {
+  background-color: black;
+  border-style: ridge;
+  color: whitesmoke;
+}
+main nav ul li a .gmailbutton {
+  background-color: #d1d1d1;
+  border-style: ridge;
+  color: whitesmoke;
+}
+main nav .productoslista li ul {
+  display: flex;
+  padding: 5px;
+}
+main nav .productoslista li ul li {
+  justify-content: space-between;
+}
+main nav .productoslista li ul li img {
+  width: 40%;
+}
+main .listadecontacto ul {
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+main .listadecontacto ul li {
+  position: relative;
+  padding: 5px;
+  width: fit-content;
 }
 
 footer {
@@ -59,6 +130,23 @@ footer .disclaimer1 {
 }
 footer .redessociales {
   grid-column: 4;
+}
+
+@media (max-width: 1024px) {
+  header nav div img {
+    width: 50%;
+  }
+  header nav div {
+    justify-content: space-evenly;
+  }
+  footer .redessociales a img {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  footer .redessociales a img {
+    width: 6%;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

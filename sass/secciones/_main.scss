@@ -1,0 +1,67 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+main{
+    #titulo{
+        color:aliceblue;
+    }
+    div{
+        display: block;
+        border: 1px solid #1DCE00;
+    }
+    nav{
+        ul{
+            li{
+                list-style: none;
+                margin: 0 15px;
+                a{
+                    button{
+                        img{
+                            width: 10%;
+                        }
+                    }
+                    .instabutton{
+                        @include button($color-instagram,ridge,$color-tipo)
+                    }
+                    .facebutton{
+                        @include button($color-facebook,ridge,$color-tipo)
+                    }
+                    .twitterbutton{
+                        @include button(black,ridge,$color-tipo)
+                    }
+                    .gmailbutton{
+                        @include button($color-gmail,ridge,$color-tipo)
+                    }
+                }
+            }
+        }
+       .productoslista{
+            li{
+                ul{
+                    display: flex;
+                    padding: 5px;
+                    li{
+                        justify-content: space-between;
+                        img{
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+       } 
+    }
+    .listadecontacto{
+        ul{
+           list-style: none;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-evenly;
+            margin: 20px;
+            li{
+                position: relative;
+                padding:5px;
+                width:fit-content;
+            } 
+        }
+    }
+}
