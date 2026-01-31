@@ -10,10 +10,18 @@ main{
         border: 1px solid #1DCE00;
     }
     nav{
-        ul{
+        div{
             li{
                 list-style: none;
                 margin: 0 15px;
+                display: grid;
+                grid-template-areas: 
+                    "instabutton instabutton instabutton instabutton"
+                    "facebutton facebutton facebutton facebutton"
+                    "twitterbutton twitterbutton twitterbutton twitterbutton"
+                    "gmailbutton gmailbutton gmailbutton gmailbutton"
+                    ;
+                justify-content: center;
                 a{
                     button{
                         img{
@@ -21,15 +29,19 @@ main{
                         }
                     }
                     .instabutton{
+                        grid-area: instabutton;
                         @include button($color-instagram,ridge,$color-tipo)
                     }
                     .facebutton{
+                         grid-area: facebutton;
                         @include button($color-facebook,ridge,$color-tipo)
                     }
                     .twitterbutton{
+                         grid-area: twitterbutton;
                         @include button(black,ridge,$color-tipo)
                     }
                     .gmailbutton{
+                         grid-area: gmailbutton;
                         @include button($color-gmail,ridge,$color-tipo)
                     }
                 }
@@ -37,9 +49,11 @@ main{
         }
        .productoslista{
             li{
+                list-style: none;
                 ul{
                     display: flex;
                     padding: 5px;
+                    list-style: none;
                     li{
                         justify-content: space-between;
                         img{
@@ -50,8 +64,8 @@ main{
             }
        } 
     }
-    .listadecontacto{
-        ul{
+    /*.listadecontacto{
+        div{
            list-style: none;
             display: flex;
             flex-flow: column nowrap;
@@ -63,5 +77,5 @@ main{
                 width:fit-content;
             } 
         }
-    }
+    }*/
 }

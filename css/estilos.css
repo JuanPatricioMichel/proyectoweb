@@ -40,36 +40,47 @@ main div {
   display: block;
   border: 1px solid #1DCE00;
 }
-main nav ul li {
+main nav div li {
   list-style: none;
   margin: 0 15px;
+  display: grid;
+  grid-template-areas: "instabutton instabutton instabutton instabutton" "facebutton facebutton facebutton facebutton" "twitterbutton twitterbutton twitterbutton twitterbutton" "gmailbutton gmailbutton gmailbutton gmailbutton";
+  justify-content: center;
 }
-main nav ul li a button img {
+main nav div li a button img {
   width: 10%;
 }
-main nav ul li a .instabutton {
+main nav div li a .instabutton {
+  grid-area: instabutton;
   background-color: #E5009F;
   border-style: ridge;
   color: whitesmoke;
 }
-main nav ul li a .facebutton {
+main nav div li a .facebutton {
+  grid-area: facebutton;
   background-color: #0866FF;
   border-style: ridge;
   color: whitesmoke;
 }
-main nav ul li a .twitterbutton {
+main nav div li a .twitterbutton {
+  grid-area: twitterbutton;
   background-color: black;
   border-style: ridge;
   color: whitesmoke;
 }
-main nav ul li a .gmailbutton {
+main nav div li a .gmailbutton {
+  grid-area: gmailbutton;
   background-color: #d1d1d1;
   border-style: ridge;
   color: whitesmoke;
 }
+main nav .productoslista li {
+  list-style: none;
+}
 main nav .productoslista li ul {
   display: flex;
   padding: 5px;
+  list-style: none;
 }
 main nav .productoslista li ul li {
   justify-content: space-between;
@@ -77,17 +88,21 @@ main nav .productoslista li ul li {
 main nav .productoslista li ul li img {
   width: 40%;
 }
-main .listadecontacto ul {
-  list-style: none;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  margin: 20px;
-}
-main .listadecontacto ul li {
-  position: relative;
-  padding: 5px;
-  width: fit-content;
+main {
+  /*.listadecontacto{
+      div{
+         list-style: none;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-evenly;
+          margin: 20px;
+          li{
+              position: relative;
+              padding:5px;
+              width:fit-content;
+          } 
+      }
+  }*/
 }
 
 footer {
