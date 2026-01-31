@@ -162,6 +162,22 @@ footer .redessociales {
   footer .redessociales a img {
     width: 6%;
   }
+  main .foda {
+    display: grid;
+    grid-template-areas: "fortaleza fortaleza oportunidad oportunidad" "fortaleza fortaleza oportunidad oportunidad" "debilidad debilidad amenaza amenaza" "debilidad debilidad amenaza amenaza";
+  }
+  main .foda .fortaleza {
+    grid-area: fortaleza;
+  }
+  main .foda .oportunidad {
+    grid-area: oportunidad;
+  }
+  main .foda .debilidades {
+    grid-area: debilidad;
+  }
+  main .foda .amenazas {
+    grid-area: amenaza;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

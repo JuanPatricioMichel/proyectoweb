@@ -1,0 +1,28 @@
+@media (min-width: 1024px){
+    footer .redessociales a img{
+        width: 6%;
+    }
+    main{
+        .foda{
+            display: grid;
+            grid-template-areas: 
+                "fortaleza fortaleza oportunidad oportunidad"
+                "fortaleza fortaleza oportunidad oportunidad"
+                "debilidad debilidad amenaza amenaza"
+                "debilidad debilidad amenaza amenaza"
+            ;
+            .fortaleza{
+                grid-area: fortaleza;
+            }
+            .oportunidad{
+                grid-area: oportunidad;
+            }
+            .debilidades{
+                grid-area: debilidad;
+            }
+            .amenazas{
+                grid-area: amenaza;
+            }
+        }
+    }
+}
