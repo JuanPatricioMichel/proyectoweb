@@ -102,14 +102,13 @@ main nav section div a .gmailbutton {
   border-style: ridge;
   color: whitesmoke;
 }
-main nav .productoslista li {
+main nav .productoslista {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px;
+  padding-left: 1.1rem;
   list-style: none;
-  justify-content: space-between;
 }
-main nav .productoslista li .card {
+main nav .productoslista .card {
   background-color: #0E0D0D;
   color: whitesmoke;
 }
@@ -209,6 +208,11 @@ footer .redessociales {
   main nav section {
     display: grid;
     grid-template-areas: "insta insta  face face" "insta insta face face" "twitter twitter gmail gmail" "twitter twitter gmail gmail";
+  }
+  main .productoslista {
+    padding: 5px;
+    justify-content: space-between;
+    padding-left: 0rem;
   }
 }
 

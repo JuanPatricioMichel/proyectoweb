@@ -57,17 +57,14 @@ main{
                 }
             }
         }
-       .productoslista{
-            li{
-                display:flex;
-                flex-wrap: wrap;
-                padding: 5px;
-                list-style: none;
-                justify-content: space-between;
-                .card{
-                    background-color: $color-primario;
-                    color: whitesmoke;   
-                }
+       .productoslista{  
+            display:flex;
+            flex-wrap: wrap;
+            padding-left: 1.1rem;
+            list-style: none;
+            .card{
+                background-color: $color-primario;
+                color: whitesmoke;   
             }
        } 
     }
