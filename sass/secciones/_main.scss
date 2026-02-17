@@ -38,7 +38,7 @@ main{
                 a{
                     button{
                         img{
-                            width: 10%;
+                            width: 5rem;
                         }
                     }
                     .instabutton{
@@ -85,4 +85,11 @@ main{
             } 
         }
     }*/
+    .topvendido{
+        li{
+            img{
+                width: 15rem;
+            }
+        }
+    }
 }

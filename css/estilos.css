@@ -80,7 +80,7 @@ main nav section div {
   justify-content: center;
 }
 main nav section div a button img {
-  width: 10%;
+  width: 5rem;
 }
 main nav section div a .instabutton {
   background-color: #E5009F;
@@ -128,6 +128,9 @@ main {
           } 
       }
   }*/
+}
+main .topvendido li img {
+  width: 15rem;
 }
 
 footer {
