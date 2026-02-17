@@ -24,6 +24,24 @@ body {
   color: black;
 }
 
+.btn-bd-custom {
+  background-color: #0E0D0D;
+  border-style: hidden;
+  color: whitesmoke;
+}
+
+.btn-bd-custom:hover {
+  background-color: #1DCE00;
+  border-style: hidden;
+  color: black;
+}
+
+.btn-bd-custom:active {
+  background-color: rgba(27, 206, 0, 0.5803921569);
+  border-style: hidden;
+  color: black;
+}
+
 header nav {
   display: block;
   margin-top: 10px;
@@ -75,18 +93,15 @@ main nav div li a .gmailbutton {
   color: whitesmoke;
 }
 main nav .productoslista li {
-  list-style: none;
-}
-main nav .productoslista li ul {
   display: flex;
+  flex-wrap: wrap;
   padding: 5px;
   list-style: none;
-}
-main nav .productoslista li ul li {
   justify-content: space-between;
 }
-main nav .productoslista li ul li img {
-  width: 40%;
+main nav .productoslista li .card {
+  background-color: #0E0D0D;
+  color: whitesmoke;
 }
 main {
   /*.listadecontacto{

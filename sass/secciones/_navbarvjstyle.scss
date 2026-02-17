@@ -12,3 +12,13 @@
         }
     }
 }
+
+.btn-bd-custom{
+    @include button($color-primario,hidden,whitesmoke)
+}
+.btn-bd-custom:hover {
+    @include button($color-secundario,hidden,black)
+}
+.btn-bd-custom:active {
+    @include button($color-terciario,hidden,black)
+}

@@ -49,17 +49,14 @@ main{
         }
        .productoslista{
             li{
+                display:flex;
+                flex-wrap: wrap;
+                padding: 5px;
                 list-style: none;
-                ul{
-                    display: flex;
-                    padding: 5px;
-                    list-style: none;
-                    li{
-                        justify-content: space-between;
-                        img{
-                            width: 40%;
-                        }
-                    }
+                justify-content: space-between;
+                .card{
+                    background-color: $color-primario;
+                    color: whitesmoke;   
                 }
             }
        } 

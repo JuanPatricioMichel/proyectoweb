@@ -6,7 +6,9 @@
 
     <!-- Link del css de bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <!-- Link del script de Bootstrap, sin esto no funciona el menu hamburguesa -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ 
     
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Productos</title>
@@ -23,7 +25,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Volver a Inicio</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active disabled" aria-current="page" href="#">Productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
@@ -47,62 +52,33 @@
                 <section class="productoslista">
                     <li>
                         <!-- sector de productos -->
-                        <ul>
-                            <li>
-                                <img src="../img/steamdeck.png" alt="steam deck de color negro">
-                            </li>
-                            <li>
-                                <p>SteamDeck</p>
-                            </li>
-                            <li>
-                                <p>APU AMD (Zen 2 + RDNA 2), 16 GB de RAM, pantalla táctil de 7-7.4" (LCD u OLED) y controles completos, incluyendo trackpads</p>
-                            </li>
-                            <li>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/steamdeck.png" class="card-img-top" alt="steam deck de color negro">
+                            <div class="card-body">
+                                <h5 class="card-title">SteamDeck</h5>
+                                <p class="card-text">APU AMD (Zen 2 + RDNA 2), 16 GB de RAM, pantalla táctil de 7-7.4" (LCD u OLED) y controles completos, incluyendo trackpads</p>
                                 <p>$150</p>
-                            </li>
-                            <li>
-                                <a href=""> Ver mas</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <li>
-                                <img src="../img/ps5.png" alt="Play Station 5 de color blanco">
-                            </li>
-                            <li>
-                                <p>PlayStation 5</p>
-                            </li>
-                            <li>
-                                <p>SSD de ultra alta velocidad (825 GB a 1 TB), CPU AMD Ryzen Zen 2 y GPU RDNA 2 personalizada que ofrece trazado de rayos (Ray Tracing). Soporta juegos en 4K hasta 120 FPS, audio 3D inmersivo y retrocompatibilidad con la mayoría de títulos de PS4
-                                </p>
-                            </li>
-                            <li>
+                                <a href="#" class="btn btn-bd-custom">Ver mas</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/ps5.png" class="card-img-top" alt="Play Station 5 de color blanco">
+                            <div class="card-body">
+                                <h5 class="card-title">PlayStation 5</h5>
+                                <p class="card-text">SSD de ultra alta velocidad (825 GB a 1 TB), CPU AMD Ryzen Zen 2 y GPU RDNA 2 personalizada que ofrece trazado de rayos (Ray Tracing). Soporta juegos en 4K hasta 120 FPS, audio 3D inmersivo y retrocompatibilidad con la mayoría de títulos de PS4</p>
                                 <p>$150</p>
-                            </li>
-                            <li>
-                                <a href=""> Ver mas</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <li>
-                                <img src="../img/switch2.png" alt=" Nintendo switch 2 de color negro">
-                            </li>
-                            <li>
-                                <p>Nintendo Switch 2</p>
-                            </li>
-                            <li>
-                                <p>Pantalla LCD más grande de 7.9 pulgadas a 1080p con 120Hz, 12 GB de RAM LPDDR5X, y 256 GB de almacenamiento interno rápido. Potenciada por un chip NVIDIA personalizado (T239), ofrece un rendimiento superior, compatibilidad con DLSS, y capacidad de salida 4K en TVpantalla LCD más grande de 7.9 pulgadas a 1080p con 120Hz, 12 GB de RAM LPDDR5X, y 256 GB de almacenamiento interno rápido. Potenciada por un chip NVIDIA personalizado (T239), ofrece un rendimiento superior, compatibilidad con DLSS, y capacidad de salida 4K en TV</p>
-                            </li>
-                            <li>
+                                <a href="#" class="btn btn-bd-custom">Ver mas</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/switch2.png" class="card-img-top" alt="Nintendo switch 2 de color negro">
+                            <div class="card-body">
+                                <h5 class="card-title">Nintendo Switch 2</h5>
+                                <p class="card-text">Pantalla LCD más grande de 7.9 pulgadas a 1080p con 120Hz, 12 GB de RAM LPDDR5X, y 256 GB de almacenamiento interno rápido. Potenciada por un chip NVIDIA personalizado (T239), ofrece un rendimiento superior, compatibilidad con DLSS, y capacidad de salida 4K en TVpantalla LCD más grande de 7.9 pulgadas a 1080p con 120Hz, 12 GB de RAM LPDDR5X, y 256 GB de almacenamiento interno rápido. Potenciada por un chip NVIDIA personalizado (T239), ofrece un rendimiento superior, compatibilidad con DLSS, y capacidad de salida 4K en TV</p>
                                 <p>$150</p>
-                            </li>
-                            <li>
-                                <a href=""> Ver mas</a>
-                            </li>
-                        </ul>
+                                <a href="#" class="btn btn-bd-custom">Ver mas</a>
+                            </div>
+                        </div>
                     </li>
                 </section>
         </nav>
