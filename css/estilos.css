@@ -58,36 +58,46 @@ main div {
   display: block;
   border: 1px solid #1DCE00;
 }
-main nav div li {
-  list-style: none;
+main nav section {
   margin: 0 15px;
   display: grid;
-  grid-template-areas: "instabutton instabutton instabutton instabutton" "facebutton facebutton facebutton facebutton" "twitterbutton twitterbutton twitterbutton twitterbutton" "gmailbutton gmailbutton gmailbutton gmailbutton";
+  grid-template-areas: "insta insta insta insta" "face face face face" "twitter twitter twitter twitter" "gmail gmail gmail gmail";
+}
+main nav section .insta {
+  grid-area: insta;
+}
+main nav section .face {
+  grid-area: face;
+}
+main nav section .twitter {
+  grid-area: twitter;
+}
+main nav section .gmail {
+  grid-area: gmail;
+}
+main nav section div {
+  list-style: none;
   justify-content: center;
 }
-main nav div li a button img {
+main nav section div a button img {
   width: 10%;
 }
-main nav div li a .instabutton {
-  grid-area: instabutton;
+main nav section div a .instabutton {
   background-color: #E5009F;
   border-style: ridge;
   color: whitesmoke;
 }
-main nav div li a .facebutton {
-  grid-area: facebutton;
+main nav section div a .facebutton {
   background-color: #0866FF;
   border-style: ridge;
   color: whitesmoke;
 }
-main nav div li a .twitterbutton {
-  grid-area: twitterbutton;
+main nav section div a .twitterbutton {
   background-color: black;
   border-style: ridge;
   color: whitesmoke;
 }
-main nav div li a .gmailbutton {
-  grid-area: gmailbutton;
+main nav section div a .gmailbutton {
   background-color: #d1d1d1;
   border-style: ridge;
   color: whitesmoke;
@@ -192,6 +202,10 @@ footer .redessociales {
   }
   main .foda .amenazas {
     grid-area: amenaza;
+  }
+  main nav section {
+    display: grid;
+    grid-template-areas: "insta insta  face face" "insta insta face face" "twitter twitter gmail gmail" "twitter twitter gmail gmail";
   }
 }
 

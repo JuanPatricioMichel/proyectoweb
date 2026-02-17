@@ -24,5 +24,16 @@
                 grid-area: amenaza;
             }
         }
+        nav{
+            section{
+                display: grid;
+                grid-template-areas: 
+                    "insta insta  face face"
+                    "insta insta face face"
+                    "twitter twitter gmail gmail"
+                    "twitter twitter gmail gmail"
+                    ;
+            }
+        }
     }
 }

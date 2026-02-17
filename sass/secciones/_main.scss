@@ -10,17 +10,30 @@ main{
         border: 1px solid #1DCE00;
     }
     nav{
-        div{
-            li{
-                list-style: none;
-                margin: 0 15px;
+        section{
+            margin: 0 15px;
                 display: grid;
                 grid-template-areas: 
-                    "instabutton instabutton instabutton instabutton"
-                    "facebutton facebutton facebutton facebutton"
-                    "twitterbutton twitterbutton twitterbutton twitterbutton"
-                    "gmailbutton gmailbutton gmailbutton gmailbutton"
+                    "insta insta insta insta"
+                    "face face face face"
+                    "twitter twitter twitter twitter"
+                    "gmail gmail gmail gmail"
                     ;
+
+            .insta{
+                grid-area: insta;
+            }
+            .face{
+                grid-area: face;
+            }
+            .twitter{
+                grid-area: twitter;
+            }
+            .gmail{
+                grid-area: gmail;
+            }
+            div{
+                list-style: none;
                 justify-content: center;
                 a{
                     button{
@@ -29,19 +42,16 @@ main{
                         }
                     }
                     .instabutton{
-                        grid-area: instabutton;
+                        
                         @include button($color-instagram,ridge,$color-tipo)
                     }
                     .facebutton{
-                         grid-area: facebutton;
                         @include button($color-facebook,ridge,$color-tipo)
                     }
                     .twitterbutton{
-                         grid-area: twitterbutton;
                         @include button(black,ridge,$color-tipo)
                     }
                     .gmailbutton{
-                         grid-area: gmailbutton;
                         @include button($color-gmail,ridge,$color-tipo)
                     }
                 }
